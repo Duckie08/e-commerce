@@ -11,4 +11,7 @@ const CustomButton = ({ children, isGoogleSignIn, inverted, ...otherProps }) => 
   </button>
 );
 
+const mapStateToProps = ({ cart: { cartItem } }) => ({
+  cartItem: cartItem
+})
 export default CustomButton;
